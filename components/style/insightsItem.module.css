@@ -1,0 +1,47 @@
+.postRichText{
+
+}
+.postRichText h2 {
+    @apply text-22 mp:text-20 xs:text-17 mb-4
+}
+.postRichText h3 {
+    @apply text-20 mp:text-[1.7rem] xs:text-15 mb-4 text-white-DBDBDB
+}
+.postRichText h4 {
+    @apply text-15 mb-4
+}
+.postRichText p {
+    @apply text-p mp:text-10 mb-4
+}
+.postRichText strong {
+    @apply font-bold
+}
+.postRichText a {
+    @apply underline underline-offset-1
+}
+.postRichText blockquote {
+    @apply text-15 italic pt-4 pb-2 mb-4 ps-8 border-l-4 border-green-3ABEB5
+}
+.postRichText ul {
+    @apply list-disc py-4;
+    padding-inline-start: 30px !important;
+}
+.postRichText ol {
+    @apply list-[lower-alpha] py-4 marker:text-white-DBDBDB;
+    padding-inline-start: 30px !important;
+}
+.postRichText ul > li {
+    @apply mb-2
+}
+.postRichText ol > li {
+    @apply mb-2
+}
+.postRichText img {
+    @apply w-full aspect-auto mb-8
+}
+.postRichText figure {
+    @apply w-full flex
+}
+.postRichText iframe {
+    @apply aspect-video border-0 w-full h-auto mt-4 mb-8
+}

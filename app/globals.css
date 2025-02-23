@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+h1 {
+    @apply 2xl:text-40 xl:text-35 text-34 md:text-40 ml:text-35 mp:text-30 xs:text-25
+}
+h2 {
+    @apply 2xl:text-35 xl:text-30 text-29 md:text-35 ml:text-30 mp:text-25 xs:text-16
+}
+h3 {
+    @apply 2xl:text-22 xl:text-19 text-17 md:text-22 ml:text-19 mp:text-17 xs:text-13
+}
+h4 {
+    @apply text-25
+}
+h5 {
+    @apply text-20
+}
+h6 {
+    @apply text-15
+}
+.container {
+    @apply 3xl:px-[17rem] 2xl:px-20 xl:px-12 lg:px-4 md:px-12 ml:px-8 mp:px-4
+}
+
+.teams_tab .react-tabs__tab--selected{
+    @apply bg-green-157F70
+}

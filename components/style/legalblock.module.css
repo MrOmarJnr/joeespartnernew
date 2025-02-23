@@ -1,0 +1,21 @@
+.legalBlock {
+    @apply text-white-DBDBDB
+}
+.legalBlock h2 {
+    @apply text-25 font-medium mb-4
+}
+.legalBlock h3 {
+    @apply text-20 mp:text-[1.7rem] xs:text-15 font-medium mb-4
+}
+.legalBlock h4 {
+    @apply text-15 mp:text-[1.4rem] xs:text-[1.3rem] mb-4 font-medium
+}
+.legalBlock p {
+    @apply text-p font-light mb-4
+}
+.legalBlock strong {
+    @apply font-bold
+}
+.legalBlock a {
+    @apply underline underline-offset-2
+}

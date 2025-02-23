@@ -1,0 +1,108 @@
+/* project.module.css */
+.gridContainer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.projectCard {
+  height: 100%;
+  min-height: 150px;
+}
+
+.projectImage {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  min-height: inherit;
+}
+
+.textOverlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.subtitle {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+/* Mobile first */
+@media (max-width: 639px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0.75rem;
+    grid-auto-rows: minmax(120px, auto);
+  }
+  
+  .projectCard {
+    min-height: 120px;
+  }
+  
+  .textOverlay {
+    padding: 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.125rem; /* 18px */
+  }
+  
+  .subtitle {
+    font-size: 0.75rem; /* 12px */
+  }
+}
+
+@media (min-width: 640px) {
+  .gridContainer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    grid-auto-rows: minmax(150px, auto);
+  }
+  
+  .projectCard {
+    min-height: 150px;
+  }
+  
+  .textOverlay {
+    padding: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(180px, auto);
+  }
+  
+  .projectCard {
+    min-height: 180px;
+  }
+  
+  .textOverlay {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: minmax(220px, auto);
+  }
+  
+  .projectCard {
+    min-height: 220px;
+  }
+}
